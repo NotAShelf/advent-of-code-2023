@@ -13,7 +13,7 @@
     pkgsForEach = nixpkgs.legacyPackages;
   in {
     packages = forEachSystem (system: {
-      day-1 = pkgsForEach.${system}.callPackage ./day-1 "1";
+      day-1 = pkgsForEach.${system}.callPackage ./day-1 {};
     });
 
     devShells = forEachSystem (system: {
