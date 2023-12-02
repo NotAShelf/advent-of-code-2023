@@ -14,6 +14,7 @@
   in {
     packages = forEachSystem (system: {
       day-1 = pkgsForEach.${system}.callPackage ./day-1 {};
+      day-2 = pkgsForEach.${system}.callPackage ./day-2 {};
     });
 
     devShells = forEachSystem (system: {
